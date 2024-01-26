@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Стили для навигационной панели */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+/* Логотип */
+.navbar-logo {
+  margin-right: auto;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+/* Стили для ссылок в навигационном меню */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}
+
+/* Стили для кнопки призыва к действию */
+.cta-button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #067a53;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-link, .cta-button {
+    text-align: center;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+  <a class="nav-link" href="#about">О нас</a>
+  <a class="nav-link" href="#training">Тренировки</a>
+  <a class="nav-link" href="#shop">Магазин</a>
+  <button class="cta-button" onclick="location.href='#signup'">Записаться</button>
+</div>
+
+</body>
+</html>
